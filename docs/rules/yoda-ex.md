@@ -33,4 +33,6 @@ Give a short description of when it would be appropriate to turn off this rule.
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+ - [ESLint core yoda rule](https://eslint.org/docs/rules/yoda)
+ - [Yoda Conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
+ - [Yoda Notation and Safe Switching](http://thomas.tuerke.net/on/design/?with=1249091668#msg1146181680)
