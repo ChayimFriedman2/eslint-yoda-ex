@@ -8,37 +8,50 @@
 // Rule Definition
 //------------------------------------------------------------------------------
 
-module.exports = {
-    meta: {
-        docs: {
-            description: "Like ESLint core yoda rules but with more options",
-            category: "Fill me in",
-            recommended: false
-        },
-        fixable: null,  // or "code" or "whitespace"
-        schema: [
-            // fill in your schema
-        ]
+module.exports = /** @type {import('eslint').Rule.RuleModule} */ ({
+  meta: {
+    type: 'suggestion',
+    docs: {
+      description: 'Like ESLint core yoda rules but with more options',
+      category: 'Best Practices',
+      recommended: false,
+      url: 'https://github.com/ChayimFriedman2/eslint-yoda-ex/blob/master/docs/rules/yoda-ex.md'
     },
+    fixable: 'code',
+    schema: [
+      {
+        enum: ['always', 'never'],
+      },
+      {
+        type: 'object',
+        properties: {
+          equality: {
+            type: 'boolean',
+            default: true,
+          },
+          inequality: {
+            type: 'boolean',
+            default: true,
+          },
+          comparison: {
+            type: 'boolean',
+            default: true,
+          },
 
-    create: function(context) {
+          range: {
+            enum: ['no-special', 'ignore', 'enforce'],
+            default: 'enforce',
+          },
+          notInRange: {
+            enum: ['ignore', 'or', 'negateAnd'],
+            default: 'or',
+          },
+        },
+        additionalProperties: false,
+      }
+    ],
+  },
 
-        // variables should be defined here
-
-        //----------------------------------------------------------------------
-        // Helpers
-        //----------------------------------------------------------------------
-
-        // any helper functions should go here or else delete this section
-
-        //----------------------------------------------------------------------
-        // Public
-        //----------------------------------------------------------------------
-
-        return {
-
-            // give me methods
-
-        };
-    }
-};
+  create(context) {
+  },
+});
