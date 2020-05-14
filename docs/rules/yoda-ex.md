@@ -85,7 +85,7 @@ if (-1 < str.indexOf(substr)) {
 Examples of **correct** code for the `"never"` option:
 
 ```js
-/* eslint yoda: ["error", "never"] */
+/* eslint yoda-ex: ["error", "never"] */
 
 if (5 & value) {
   // ...
@@ -114,7 +114,7 @@ if (`red` === `${color}`) {
 Examples of **incorrect** code for the `"always"` option:
 
 ```js
-/* eslint yoda: "error" */
+/* eslint yoda-ex: "error" */
 
 if (color == "blue") {
   // ...
@@ -176,7 +176,7 @@ if (-1 < str.indexOf(substr)) {
 Examples of **correct** code for the `{ "onlyIfs": false }` option:
 
 ```js
-/* eslint yoda: ["error", "never"] */
+/* eslint yoda-ex: ["error", "never"] */
 
 if (5 & value) {
   // ...
@@ -214,7 +214,7 @@ if (-1 < str.indexOf(substr)) {
 Examples of **correct** code for the `{ "onlyIfs": true }` option:
 
 ```js
-/* eslint yoda: ["error", "never", { "onlyIfs": true }] */
+/* eslint yoda-ex: ["error", "never", { "onlyIfs": true }] */
 
 if (5 & value) {
   // ...
