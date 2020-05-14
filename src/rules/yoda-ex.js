@@ -47,6 +47,10 @@ module.exports = /** @type {import('eslint').Rule.RuleModule} */ ({
             enum: ['no-special', 'ignore', 'enforce'],
             default: 'enforce',
           },
+          requireParenthesizedRange: {
+            type: 'boolean',
+            default: false,
+          },
           notInRange: {
             enum: ['ignore', 'or', 'negateAnd'],
             default: 'or',

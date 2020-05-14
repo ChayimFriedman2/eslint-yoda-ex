@@ -47,6 +47,7 @@ And an object literal:
    - `"ignore"` - leave them as either `!(1 <= a && a <= 8)` or `a < 1 || 8 < a`.
    - `"or"` (default) - enforce them to be of the form `a < 1 || 8 < a`.
    - `"negateAnd"` - enforce them to be of the form `!(1 <= a && a <= 8)`.
+ - If the `"requireParenthesizedRange"` property is `true`, tests are considered to be ranges only if they're parenthesized. Defaults to false.
 
 ### never
 
