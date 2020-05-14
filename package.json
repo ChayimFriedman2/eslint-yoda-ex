@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-yoda-ex",
+  "version": "1.0.0",
+  "description": "ESLint plugin for more comprehensive yoda rule",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "yoda"
+  ],
+  "author": "Chayim Refael Friedman <chayimfr@gmail.com>",
+  "main": "src/index.js",
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
