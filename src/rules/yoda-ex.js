@@ -12,7 +12,7 @@ module.exports = /** @type {import('eslint').Rule.RuleModule} */ ({
   meta: {
     type: 'suggestion',
     docs: {
-      description: 'Like ESLint core yoda rules but with more options',
+      description: 'Require or disallow Yoda Conditions',
       category: 'Best Practices',
       recommended: false,
       url: 'https://github.com/ChayimFriedman2/eslint-yoda-ex/blob/master/docs/rules/yoda-ex.md'
@@ -25,6 +25,11 @@ module.exports = /** @type {import('eslint').Rule.RuleModule} */ ({
       {
         type: 'object',
         properties: {
+          onlyIfs: {
+            type: 'boolean',
+            default: false,
+          },
+
           equality: {
             type: 'boolean',
             default: true,
